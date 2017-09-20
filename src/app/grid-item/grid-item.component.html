@@ -1,0 +1,8 @@
+<div class="col-sm-1 block">
+  <app-grid-logo [photo]="office.photo" [name]="office.name">
+  </app-grid-logo>
+</div>
+<div class="col-sm-11">
+  <h4 style="color:black;">{{ office.name }}</h4>
+  <h5 style="color:black;">{{office.description | slice:0:60 }}</h5>
+</div>

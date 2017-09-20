@@ -1,0 +1,7 @@
+
+<div *ngIf="photo !== null; else letter">
+  <img class="circle-grid" [src]="photo">
+</div>
+<ng-template #letter>
+  <div class="circle-grid">{{name[0]}}</div>
+</ng-template>

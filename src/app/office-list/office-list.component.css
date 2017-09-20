@@ -1,0 +1,30 @@
+.container {
+  margin-top: 50px;
+  background-color: darkgreen;
+}
+
+
+.color {
+  background-color: darkgreen;
+  color: white;
+}
+a:link {
+  color: white;
+}
+
+a:hover {
+  color: aquamarine;
+}
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 20px;
+  color:black;
+  line-height: 50px;
+  font-style:bold;
+  text-align: center;
+  background: gray ;
+
+}
+

@@ -1,0 +1,26 @@
+
+  <div class="embed-responsive embed-responsive-16by9">
+    <div class="embed-responsive-item">
+      <agm-map 
+        [latitude]="lat" 
+        [longitude]="lng"
+        [zoom]="zoom">
+      <agm-marker
+      *ngFor="let m of markers"
+        [latitude]="m.lat" 
+        [longitude]="m.lng">
+        <agm-info-window>
+          <h3>{{m.name}}</h3>
+          <h5>{{m.desc | slice:0:45}}</h5>
+        </agm-info-window>
+      </agm-marker>
+    </agm-map>
+    </div>
+  </div>
+
+
+
+  
+    
+  
+
