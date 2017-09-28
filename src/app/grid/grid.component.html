@@ -1,4 +1,4 @@
-<div class="col-sm-12 flex" *ngFor="let office of offices">
-  <hr>
-  <app-grid-item [office]="office"></app-grid-item>
+<div class="card-columns">
+  <app-grid-item *ngFor="let office of offices"
+  [office]="office"></app-grid-item>
 </div>
