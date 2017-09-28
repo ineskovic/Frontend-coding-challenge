@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
-import { officeService } from '../office.service';
+import { OfficeService } from '../office.service';
 
 @Component({
   selector: 'app-map',
@@ -8,10 +7,7 @@ import { officeService } from '../office.service';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
- 
-  
   public zoom: number = 2;
-  
 
   public markers: Array<any> = [
     {
@@ -89,14 +85,6 @@ export class MapComponent implements OnInit {
   ];
   constructor() { }
 
-  
-
    ngOnInit() {}
 
   }
-
-
-
-
-
-
