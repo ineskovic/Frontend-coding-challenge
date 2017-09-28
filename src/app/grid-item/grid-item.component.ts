@@ -5,12 +5,6 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './grid-item.component.html',
   styleUrls: ['./grid-item.component.css']
 })
-export class GridItemComponent implements OnInit {
+export class GridItemComponent {
   @Input() public office: any = {};
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }

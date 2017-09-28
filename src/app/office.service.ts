@@ -1,13 +1,12 @@
 import {Injectable} from '@angular/core';
-import {Headers, Http, Response} from '@angular/http';
+import {Http, Response} from '@angular/http';
 import 'rxjs/Rx';
 import {Observable} from 'rxjs/Observable';
 
 @Injectable()
-export class officeService {
+export class OfficeService {
   constructor(private http: Http) {
   }
-
 
   getOfficeInfo() {
     return this.http.get('https://itk-exam-api.herokuapp.com/api/offices')

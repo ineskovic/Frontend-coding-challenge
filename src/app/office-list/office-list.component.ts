@@ -1,9 +1,5 @@
-
-import { officeService } from '../office.service';
-
-import { Component, OnInit, Input } from '@angular/core';
-import { Response } from '@angular/http';
-
+import { OfficeService } from '../office.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-office-list',
@@ -11,9 +7,9 @@ import { Response } from '@angular/http';
   styleUrls: ['./office-list.component.css']
 })
 export class OfficeListComponent implements OnInit {
-  @Input() public offices: Array<any> = [];
+  public offices: Array<any> = [];
 
-  constructor(private officeService: officeService) { }
+  constructor(private officeService: OfficeService) { }
 
   public ngOnInit(): void {
     console.log('OfficeListCompoent');
@@ -23,9 +19,5 @@ export class OfficeListComponent implements OnInit {
   public getOffices(): void {
     this.officeService.getOfficeInfo().subscribe((offices: any[]) =>
       this.offices = offices, (error) => console.log(error));
-  
- 
   }
-}  
-
-
+}

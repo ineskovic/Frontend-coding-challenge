@@ -1,5 +1,5 @@
-import { officeService } from '../office.service';
-import { Component, OnInit, Input } from '@angular/core';
+import { OfficeService } from '../office.service';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-grid',
@@ -8,9 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class GridComponent implements OnInit {
 
-  @Input() public offices: Array<any> = [];
+  public offices: Array<any> = [];
 
-  constructor(private officeService: officeService) { }
+  constructor(private officeService: OfficeService) { }
 
   public ngOnInit(): void {
     console.log('OfficeListCompoent');
@@ -22,4 +22,4 @@ export class GridComponent implements OnInit {
       this.offices = offices, (error) => console.log(error));
 
   }
-}  
+}

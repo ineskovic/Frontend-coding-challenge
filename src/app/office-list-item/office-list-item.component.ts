@@ -7,9 +7,6 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class OfficeListItemComponent implements OnInit {
   @Input() public office: any = {};
-
-  constructor() { }
-
   public ngOnInit(): void {
     console.log('OfficeListitemCompoent');
   }

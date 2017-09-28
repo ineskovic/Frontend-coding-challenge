@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-office-logo',
@@ -10,10 +10,7 @@ export class OfficeLogoComponent implements OnInit {
   @Input() public photo: string;
   @Input() public name: string;
 
-  constructor() { }
-
   public ngOnInit(): void {
     console.log('OfficeListCompoent');
   }
-
 }
