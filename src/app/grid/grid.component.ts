@@ -18,7 +18,7 @@ export class GridComponent implements OnInit {
   }
 
   public getOffices(): void {
-    this.officeService.getOfficeInfo().subscribe((offices: any[]) =>
+    this.officeService.getOffices().subscribe((offices: any[]) =>
       this.offices = offices, (error) => console.log(error));
 
   }

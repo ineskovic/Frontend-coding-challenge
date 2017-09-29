@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfficeListComponent implements OnInit {
   public offices: Array<any> = [];
-
   constructor(private officeService: OfficeService) { }
 
   public ngOnInit(): void {
@@ -17,7 +16,7 @@ export class OfficeListComponent implements OnInit {
   }
 
   public getOffices(): void {
-    this.officeService.getOfficeInfo().subscribe((offices: any[]) =>
+    this.officeService.getOffices().subscribe((offices: any[]) =>
       this.offices = offices, (error) => console.log(error));
   }
 }
