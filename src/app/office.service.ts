@@ -15,8 +15,7 @@ export class OfficeService {
 
   fetchOffices() {
     this.http
-      .get('https://itk-exam-api.herokuapp.com/api/offices')
-      .toPromise()
+      .get('https://itk-exam-api.herokuapp.com/api/offices').toPromise()
       .then(
         (response: Response) => {
           this.subject.next(response.json());

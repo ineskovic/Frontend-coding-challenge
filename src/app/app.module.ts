@@ -14,7 +14,6 @@ import { OfficeLogoComponent } from './office-logo/office-logo.component';
 import { OfficeListItemComponent } from './office-list-item/office-list-item.component';
 import { GridItemComponent } from './grid-item/grid-item.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

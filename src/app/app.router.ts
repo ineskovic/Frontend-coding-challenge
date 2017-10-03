@@ -9,7 +9,6 @@ export const router: Routes = [
   { path: 'office', component: OfficeListComponent },
   { path: 'grid', component: GridComponent },
   { path: 'map', component: MapComponent },
- 
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);
